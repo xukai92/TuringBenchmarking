@@ -4,5 +4,6 @@ CONFIG = {
   "mili_num" => 1000000,
   "obs_num" => 500,
   "model_list" => ["big_hmm", "linear_gaussian_1d", "marsaglia", "branching", "tricky_coin"],
-  "sampler" => "SMC"
+  "sampler" => "SMC",
+  "result_file" => "runtime_result.txt"
 }
