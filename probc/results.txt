@@ -1,0 +1,16 @@
+Probablistic C runtime
+big-hmm exps starts
+2207, 1857, 1923, 1903, 1827, 1877, 1816, 1922, 1899, 2067,
+big-hmm exps ends
+linear-gaussian exps starts
+1908, 1957, 1886, 1981, 1919, 1815, 1816, 2020, 1888, 1869,
+linear-gaussian exps ends
+marsaglia exps starts
+1880, 1797, 1770, 1700, 1496, 1515, 1749, 1635, 1519, 1789,
+marsaglia exps ends
+tricky-coin exps starts
+1600, 1727, 1894, 1882, 1795, 1773, 1826, 1710, 1843, 1813,
+tricky-coin exps ends
+simple-branching exps starts
+1906, 1630, 1769, 1858, 1833, 1741, 1703, 1872, 1816, 1797,
+simple-branching exps ends
