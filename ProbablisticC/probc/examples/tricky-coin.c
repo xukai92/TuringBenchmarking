@@ -16,12 +16,15 @@ int main(int argc, char** argv) {
     // theta | is_tricky ~ beta(1,1)
     // theta | !is_tricky = 0.5
     double theta;
+    int obs[N];
+    for (int i=0; i<N; i++) obs[i] = 1;
+
+    is_tricky = flip_rng(0.1);
+    theta = is_tricky ? beta_rng(1, 1) : 0.5;
 
     // observe 500 coin flips, all coming up heads
     for (int i=0; i<N; i++) {
-      is_tricky = flip_rng(0.1);
-      theta = is_tricky ? beta_rng(1, 1) : 0.5;
-      observe(flip_lnp(1, theta));
+      observe(flip_lnp(obs[i], theta));
     }
 
     // is the coin tricky?
