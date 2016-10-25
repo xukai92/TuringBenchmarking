@@ -163,7 +163,7 @@ int main(int argc, char **argv) {
     for (int i=0; i<N; i++) {
         states[i] = (i == 0) ? (int)discrete_rng(initial_state_dist, K) : (int)discrete_rng(T[states[i-1]], K);
         if (i > 0) {
-            weight_trace(normal_lnp(observations[i], state_obs_mean[states[i]], 4), (i%5) == 0);
+            weight_trace(normal_lnp(observations[i], state_obs_mean[states[i]], 4), 1);
         }
         // predict("state[%d],%d\n", i, states[i]);
     }

@@ -1,0 +1,61 @@
+Probablistic C runtime
+big-hmm exps starts
+real	14m8.751s
+real	14m17.846s
+real	14m12.973s
+real	14m24.961s
+real	14m22.278s
+real	14m16.544s
+real	14m35.597s
+real	14m28.693s
+real	14m17.060s
+real	14m38.198s
+big-hmm exps ends
+linear-gaussian exps starts
+real	12m13.958s
+real	12m16.712s
+real	26m49.274s
+real	12m19.544s
+real	12m18.736s
+real	12m35.477s
+real	12m0.399s
+real	12m15.948s
+real	12m20.447s
+real	12m15.739s
+linear-gaussian exps ends
+marsaglia exps starts
+real	0m1.660s
+real	0m1.630s
+real	0m1.630s
+real	0m1.639s
+real	0m1.625s
+real	0m1.636s
+real	0m1.617s
+real	0m1.625s
+real	0m1.630s
+real	0m1.623s
+marsaglia exps ends
+tricky-coin exps starts
+real	2m59.989s
+real	2m57.308s
+real	2m58.734s
+real	2m59.938s
+real	2m59.620s
+real	2m58.091s
+real	2m59.019s
+real	2m58.287s
+real	2m58.329s
+real	2m59.393s
+tricky-coin exps ends
+simple-branching exps starts
+real	2m56.174s
+real	2m59.232s
+real	2m57.033s
+real	2m59.702s
+real	2m56.065s
+real	2m55.464s
+real	2m58.017s
+real	2m59.113s
+real	2m57.845s
+real	2m54.910s
+simple-branching exps ends
