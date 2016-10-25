@@ -33,6 +33,10 @@ open(CONFIG["result_file"], "w") do f
       println("[runtime_main] $(model) 10k $i-th run finished with $(times_10k[end])s")
     end
 
+    write(f, "[$(model)_10k] times: ")
+    write(f, "$(times_10k)\n")
+    write(f, "[$(model)_10k] mean: $(mean(times_10k)), std: $(std(times_10k))\n")
+
   end
 
   cd(current_path)
