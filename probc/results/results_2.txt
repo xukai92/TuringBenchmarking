@@ -1,0 +1,37 @@
+Probablistic C runtime
+marsaglia exps starts
+real	2m56.424s
+real	2m53.016s
+real	2m54.555s
+real	2m55.849s
+real	2m56.373s
+real	2m54.612s
+real	2m53.729s
+real	2m58.152s
+real	2m57.210s
+real	2m53.798s
+marsaglia exps ends
+tricky-coin exps starts
+real	3m4.963s
+real	3m4.731s
+real	3m5.341s
+real	3m6.730s
+real	3m4.923s
+real	3m6.204s
+real	3m6.034s
+real	3m5.109s
+real	3m5.275s
+real	3m3.902s
+tricky-coin exps ends
+simple-branching exps starts
+real	26m35.848s
+real	26m31.496s
+real	26m37.350s
+real	27m6.885s
+real	26m58.579s
+real	26m57.713s
+real	26m55.451s
+real	27m29.451s
+real	35m13.160s
+real	27m15.591s
+simple-branching exps ends
