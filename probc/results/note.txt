@@ -1,0 +1,5 @@
+hmm - 1
+gaussian - 1
+marsaglia - 1
+branching - 2
+tricky - 2
