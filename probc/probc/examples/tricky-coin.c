@@ -11,14 +11,16 @@ int main(int argc, char** argv) {
      */
 
     // p(is_tricky) = 0.1
-    int is_tricky = flip_rng(0.1);
+    int is_tricky;
 
     // theta | is_tricky ~ beta(1,1)
     // theta | !is_tricky = 0.5
-    double theta = is_tricky ? beta_rng(1, 1) : 0.5;
+    double theta;
 
     // observe 500 coin flips, all coming up heads
     for (int i=0; i<N; i++) {
+      is_tricky = flip_rng(0.1);
+      theta = is_tricky ? beta_rng(1, 1) : 0.5;
       observe(flip_lnp(1, theta));
     }
 
