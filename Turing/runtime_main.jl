@@ -2,7 +2,7 @@
 using Turing, Distributions
 
 # Load utility functions
-include("util.jl")
+include("../util.jl")
 
 # Load configurations
 include("runtime_config.jl")
