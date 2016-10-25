@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
         s = sqrt(-2.0 * log(s) / s);
         double spare = y * s;
         rv[i] = mu + sigma * x * s;
-        observe(normal_lnp(rv[i], mu, sigma), 1);
+        observe(normal_lnp(rv[i], mu, sigma));
     }
 
     return 0;
