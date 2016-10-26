@@ -1,0 +1,59 @@
+# Load utility functions
+include("../util.jl")
+
+# Load configurations
+include("runtime_config.jl")
+
+# Log
+println("------------------------------------")
+println("Anglican runtime benchmarking script")
+println("------------------------------------")
+println("Configurations:")
+print_dict(CONFIG)
+println("------------------------------------")
+
+# Set run command
+# Adapted from https://github.com/yebai/TuringPrivate.jl/blob/719914abe91b8c3bc80d654ae6a5c4a75d7d5ab1/private/experiments/Anglican.jl
+
+# Open result file
+open(CONFIG["result_file"], "w") do f
+  current_path = pwd()
+  cd("anglican-user")
+
+  # Run the main loop
+  for model in CONFIG["model_list"]
+    run_anglican(num) = float(readall(pipeline(
+                           `echo '(time (m! $model -a $(CONFIG["sampler"]) -n 1 -o ":number-of-particles $num"))'`
+                         , `lein repl`
+                         , `grep 'Elapsed time'`
+                         , `egrep -o '[0-9]*\.[0-9]*'`
+                         ))) / 1000
+
+    println("[runtime_main] current model: $(model)")
+
+    # 10k
+    times_10k = Float64[]
+    for i in 1:CONFIG["batch_size"]
+      println("[runtime_main] $(model) 10k $i-th run starts")
+      push!(times_10k, run_anglican(CONFIG["kilo_num"]))
+      println("[runtime_main] $(model) 10k $i-th run finished with $(times_10k[end])s")
+    end
+
+    write(f, "[$(model)_10k] times: ")
+    write(f, "$(times_10k)\n")
+    write(f, "[$(model)_10k] mean: $(mean(times_10k)), std: $(std(times_10k))\n")
+
+    # 1M
+    times_1M = Float64[]
+    for i in 1:CONFIG["batch_size"]
+      println("[runtime_main] $(model) 1M $i-th run starts")
+      push!(times_1M, run_anglican(CONFIG["mili_num"]))
+      println("[runtime_main] $(model) 1M $i-th run finished with $(times_1M[end])s")
+    end
+    write(f, "[$(model)_1M] times: ")
+    write(f, "$(times_1M)\n")
+    write(f, "[$(model)_1M] mean: $(mean(times_1M)), std: $(std(times_1M))\n")
+
+  end
+
+end

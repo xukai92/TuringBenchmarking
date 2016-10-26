@@ -17,13 +17,14 @@ open(CONFIG["result_file"], "w") do f
 
   current_path = pwd()
   cd("probc")
-  print(pwd())
+
   run(pipeline(`make ENGINE=$(CONFIG["sampler"])`, stdout=DevNull, stderr=DevNull))
 
   # Run the main loop
   for model in CONFIG["model_list"]
-    println("[runtime_main] current model: $(model)")
     run_probc() = float(readall(pipeline(`time -p bin/$model -p $(CONFIG["num"])`, stdout=DevNull, stderr=pipeline(`grep real`, `awk '{print $2}'`))))
+
+    println("[runtime_main] current model: $(model)")
 
     # 10k
     times_10k = Float64[]
