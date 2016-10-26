@@ -1,4 +1,4 @@
-# PPL Benchmarking Toolkit
+# PPL Benchmarking Scripts
 
 ## How to use
 
