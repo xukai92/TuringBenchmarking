@@ -1,5 +1,5 @@
 CONFIG = {
-  "batch_size" => 5,
+  "batch_size" => 10,
   "kilo_num" => 10000,
   "mili_num" => 1000000,
   "model_list" => ["hmm", "gaussian", "marsaglia", "branching", "coin"],
