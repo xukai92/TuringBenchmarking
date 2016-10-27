@@ -22,12 +22,18 @@ open(CONFIG["result_file"], "w") do f
 
   # Run the main loop
   for model in CONFIG["model_list"]
-    run_anglican(num) = float(readall(pipeline(
-                           `echo '(time (m! $model -a $(CONFIG["sampler"]) -n 1 -o ":number-of-particles $num"))'`
+    function run_anglican(num)
+      sampler = CONFIG["sampler"]
+      options = string("\"", ":number-of-particles ", num, "\"")
+      clojure_command = "(m! $model -a $sampler -n 1 -o $options)"
+      timing_command = string("(time ", clojure_command, ")")
+      float(readall(pipeline(
+                           `echo $timing_command`
                          , `lein repl`
                          , `grep 'Elapsed time'`
                          , `egrep -o '[0-9]*\.[0-9]*'`
                          ))) / 1000
+    end
 
     println("[runtime_main] current model: $(model)")
 
