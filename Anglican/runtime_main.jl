@@ -25,8 +25,8 @@ open(CONFIG["result_file"], "w") do f
     function run_anglican(num)
       sampler = CONFIG["sampler"]
       options = string("\"", ":number-of-particles ", num, "\"")
-      clojure_command = "(+ 1 1) (m! $model -a $sampler -n 1 -o $options)"
-      timing_command = string("(time ", clojure_command, ")")
+      clojure_command = "(m! $model -a $sampler -n 1 -o $options)"
+      timing_command = string("(+ 1 1) (time ", clojure_command, ")")
       # float(
         readall(pipeline(
                            `echo $timing_command`
@@ -40,7 +40,8 @@ open(CONFIG["result_file"], "w") do f
     println("[runtime_main] current model: $(model)")
 
     # 10k
-    times_10k = Float64[]
+    # times_10k = Float64[]
+    times_10k = []
     for i in 1:CONFIG["batch_size"]
       println("[runtime_main] $(model) 10k $i-th run starts @$(time())")
       push!(times_10k, run_anglican(CONFIG["kilo_num"]))
@@ -54,7 +55,8 @@ open(CONFIG["result_file"], "w") do f
     end
 
     # 1M
-    times_1M = Float64[]
+    # times_1M = Float64[]
+    times_1M = []
     for i in 1:CONFIG["batch_size"]
       println("[runtime_main] $(model) 1M $i-th run starts @$(time())")
       push!(times_1M, run_anglican(CONFIG["mili_num"]))

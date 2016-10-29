@@ -30,3 +30,8 @@ exit
 (time (m! branching -a smc -n 1 -o ":number-of-particles 100000"))
 (def x (+ 1 2)) (+ x 1)
 exit
+(time (+ 1 1) (m! hmm -a smc -n 1 -o ":number-of-particles 10"))
+(time (m! hmm -a smc -n 1 -o ":number-of-particles 10"))
+exit
+(+ 1 1) (time (m! hmm -a smc -n 1 -o ":number-of-particles 10"))
+(+ 1 1) (time (m! marsaglia -a smc -n 1 -o ":number-of-particles 10"))
