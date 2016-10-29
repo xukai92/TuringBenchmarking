@@ -1,0 +1,26 @@
+[runtime_main] current model: hmm
+[runtime_main] hmm 10k 1-th run starts
+[runtime_main] hmm 10k 1-th run finished with 305.82155788899996s
+[runtime_main] hmm 10k 2-th run starts
+[runtime_main] hmm 10k 2-th run finished with 309.57979430800003s
+[runtime_main] hmm 10k 3-th run starts
+[runtime_main] hmm 10k 3-th run finished with 312.439227369s
+[runtime_main] hmm 10k 4-th run starts
+[runtime_main] hmm 10k 4-th run finished with 309.572685151s
+[runtime_main] hmm 10k 5-th run starts
+[runtime_main] hmm 10k 5-th run finished with 304.688259355s
+[runtime_main] hmm 10k 6-th run starts
+[runtime_main] hmm 10k 6-th run finished with 308.497586982s
+[runtime_main] hmm 10k 7-th run starts
+[runtime_main] hmm 10k 7-th run finished with 306.396080067s
+[runtime_main] hmm 10k 8-th run starts
+[runtime_main] hmm 10k 8-th run finished with 308.55541967700003s
+[runtime_main] hmm 10k 9-th run starts
+[runtime_main] hmm 10k 9-th run finished with 303.288409824s
+[runtime_main] hmm 10k 10-th run starts
+[runtime_main] hmm 10k 10-th run finished with 314.548373903s
+[runtime_main] hmm 1M 1-th run starts
+[runtime_main] hmm 1M 1-th run finished with 0.0028100726937629s
+[runtime_main] hmm 1M 2-th run starts
+[runtime_main] hmm 1M 2-th run finished with 0.002757879685281s
+[runtime_main] hmm 1M 3-th run starts

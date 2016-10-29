@@ -1,0 +1,14 @@
+[gaussian_10k] times: [61.725827171999995]
+[gaussian_10k] mean: 61.725827171999995, std: NaN
+[gaussian_1M] times: [6497.743449590999]
+[gaussian_1M] mean: 6497.743449590999, std: NaN
+[marsaglia_10k] times: [0.692915969]
+[marsaglia_10k] mean: 0.692915969, std: NaN
+[marsaglia_1M] times: [4.782532895]
+[marsaglia_1M] mean: 4.782532895, std: NaN
+[branching_10k] times: [0.7797176379999999]
+[branching_10k] mean: 0.7797176379999999, std: NaN
+[branching_1M] times: [0.7141282999999999]
+[branching_1M] mean: 0.7141282999999999, std: NaN
+[coin_10k] times: [115.540783737]
+[coin_10k] mean: 115.540783737, std: NaN
