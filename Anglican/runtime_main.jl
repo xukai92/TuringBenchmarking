@@ -25,7 +25,7 @@ open(CONFIG["result_file"], "w") do f
     function run_anglican(num)
       sampler = CONFIG["sampler"]
       options = string("\"", ":number-of-particles ", num, "\"")
-      clojure_command = "(m! $model -a $sampler -n 1 -o $options)"
+      clojure_command = "(+ 1 1) (m! $model -a $sampler -n 1 -o $options)"
       timing_command = string("(time ", clojure_command, ")")
       float(readall(pipeline(
                            `echo $timing_command`

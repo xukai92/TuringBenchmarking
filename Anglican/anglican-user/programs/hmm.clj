@@ -189,15 +189,9 @@
                (fn [states obs]
                  (let [state (sample (get trans-dists
                                           (peek states)))]
-                   (observe (normal (mean states) 4) obs)
+                   (observe (normal (mean2 states) 4) obs)
                    (conj states state)))
                [(sample init-dist)]
                observations))
 
     ))
-
-
-
-
-
-

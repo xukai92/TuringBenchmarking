@@ -18,3 +18,15 @@
 (time (m! branching -a smc -n 1 -o ":number-of-particles 1000000"))
 (time (m! coin -a smc -n 1 -o ":number-of-particles 10000"))
 (time (m! coin -a smc -n 1 -o ":number-of-particles 1000000"))
+(time (m! coin -a smc -n 1 -o ":number-of-particles 10"))
+(time (m! coin -a smc -n 1 -o ":number-of-particles 100"))
+(time (m! coin -a smc -n 1 -o ":number-of-particles 1000"))
+(time (m! hmm -a smc -n 1 -o ":number-of-particles 100"))
+exit
+(time (m! branching -a smc -n 1 -o ":number-of-particles 100"))
+(time (m! branching -a smc -n 1 -o ":number-of-particles 10"))
+(time (m! branching -a smc -n 1 -o ":number-of-particles 1000"))
+(time (m! branching -a smc -n 1 -o ":number-of-particles 10000"))
+(time (m! branching -a smc -n 1 -o ":number-of-particles 100000"))
+(def x (+ 1 2)) (+ x 1)
+exit
