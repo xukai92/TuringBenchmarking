@@ -1,0 +1,1 @@
+[hmm_10k] times: Any["\"Elapsed time: 242524.957192 msecs\"\n","\"Elapsed time: 249930.825572 msecs\"\n","\"Elapsed time: 242788.44246 msecs\"\n","\"Elapsed time: 240165.41536 msecs\"\n"]
