@@ -51,7 +51,7 @@ open(CONFIG["result_file"], "w") do f
     write(f, "[$(model)_10k] times: ")
     write(f, "$(times_10k)\n")
     if CONFIG["batch_size"] > 1
-      write(f, "[$(model)_10k] mean: $(mean(times_10k)), std: $(std(times_10k))\n")
+      # write(f, "[$(model)_10k] mean: $(mean(times_10k)), std: $(std(times_10k))\n")
     end
 
     # 1M
@@ -65,7 +65,7 @@ open(CONFIG["result_file"], "w") do f
     write(f, "[$(model)_1M] times: ")
     write(f, "$(times_1M)\n")
     if CONFIG["batch_size"] > 1
-      write(f, "[$(model)_1M] mean: $(mean(times_1M)), std: $(std(times_1M))\n")
+      # write(f, "[$(model)_1M] mean: $(mean(times_1M)), std: $(std(times_1M))\n")
     end
   end
 
