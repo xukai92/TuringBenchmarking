@@ -35,3 +35,12 @@ exit
 exit
 (+ 1 1) (time (m! hmm -a smc -n 1 -o ":number-of-particles 10"))
 (+ 1 1) (time (m! marsaglia -a smc -n 1 -o ":number-of-particles 10"))
+(+ 1 1) (time (m! hmm -a smc -n 1 -o ":number-of-particles 10"))
+(+ 1 1) (time (m! hmm -a smc -n 1 -o ":number-of-particles 10000"))
+(+ 1 1) (time (m! hmm -a smc -n 1 -o ":number-of-particles 1000000"))
+(+ 1 1) (time (m! marsaglia -a smc -n 1 -o ":number-of-particles 10000"))
+(+ 1 1) (time (m! marsaglia -a smc -n 1 -o ":number-of-particles 1000000"))
+(+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 10000"))
+(+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 1000000"))
+(+ 1 1) (time (m! coin -a smc -n 1 -o ":number-of-particles 10000"))
+(+ 1 1) (time (m! coin -a smc -n 1 -o ":number-of-particles 1000000"))

@@ -1,0 +1,7 @@
+[hmm_10k] times: Any["\"Elapsed time: 247843.026434 msecs\"\n"]
+[hmm_1M] times: Any["\"Elapsed time: 2.2487097429124E7 msecs\"\n"]
+[marsaglia_10k] times: Any["\"Elapsed time: 725.595453 msecs\"\n"]
+[marsaglia_1M] times: Any["\"Elapsed time: 4814.804489 msecs\"\n"]
+[branching_10k] times: Any["\"Elapsed time: 842.174998 msecs\"\n"]
+[branching_1M] times: Any["\"Elapsed time: 761.604139 msecs\"\n"]
+[coin_10k] times: Any["\"Elapsed time: 116857.96326 msecs\"\n"]
