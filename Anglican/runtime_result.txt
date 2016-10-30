@@ -1,3 +1,0 @@
-[hmm_10k] times: Any["\"Elapsed time: 978.995735 msecs\"\n"]
-[hmm_1M] times: Any["\"Elapsed time: 890.086293 msecs\"\n"]
-[marsaglia_10k] times: Any["\"Elapsed time: 654.512101 msecs\"\n"]
