@@ -1,0 +1,2 @@
+[branching_10k] times: Any["\"Elapsed time: 2156.318814 msecs\"\n","\"Elapsed time: 7878.272458 msecs\"\n","\"Elapsed time: 31346.891911 msecs\"\n","\"Elapsed time: 6992.890487 msecs\"\n","\"Elapsed time: 14475.191367 msecs\"\n","\"Elapsed time: 1897.545275 msecs\"\n"]
+[branching_1M] times: Any["\"Elapsed time: 2781.645199 msecs\"\n","\"Elapsed time: 4455.498089 msecs\"\n","\"Elapsed time: 11950.865952 msecs\"\n","\"Elapsed time: 19899.626803 msecs\"\n","\"Elapsed time: 16908.943139 msecs\"\n","\"Elapsed time: 18416.200725 msecs\"\n"]

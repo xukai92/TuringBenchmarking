@@ -1,0 +1,2 @@
+[branching_10k] times: Any["\"Elapsed time: 4402.723981 msecs\"\n","\"Elapsed time: 13856.44408 msecs\"\n","\"Elapsed time: 3386.960771 msecs\"\n","\"Elapsed time: 5805.432638 msecs\"\n"]
+[branching_1M] times: Any["\"Elapsed time: 40672.707128 msecs\"\n","\"Elapsed time: 8825.492828 msecs\"\n","\"Elapsed time: 40457.82392 msecs\"\n","\"Elapsed time: 9398.895226 msecs\"\n"]
