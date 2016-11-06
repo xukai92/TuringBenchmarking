@@ -68,3 +68,12 @@ exit
 (+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 1000000"))
 (+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 10000"))
 (+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 1000000"))
+(defn fib [n]
+  "returns the n-th number in the Fibonacci sequence"
+  (loop [a 0 b 1 m 0]
+    (if (= m n)
+      a
+      (recur b (+ a b) (inc m)))))
+(time (fib 10))
+(time (fib 30))
+exit
