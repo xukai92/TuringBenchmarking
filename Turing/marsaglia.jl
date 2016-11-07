@@ -3,14 +3,15 @@ mu = 3
 sigma = 1
 
 @model marsaglia begin
-    rv = tzeros(N)
+    rv = zeros(N)
+    dist = Uniform(-1.0, 1.0)
     for i in 1:N
-        @assume x ~ Uniform(-1.0, 1.0)
-        @assume y ~ Uniform(-1.0, 1.0)
+        @assume x ~ dist
+        @assume y ~ dist
         s = x * x + y * y
         while s >= 1 || s == 0
-            x = rand( Uniform(-1.0, 1.0))
-            y = rand( Uniform(-1.0, 1.0))
+            @assume x ~ dist
+            @assume y ~ dist
             s = x * x + y * y
         end
 
