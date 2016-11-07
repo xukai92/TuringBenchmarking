@@ -1,9 +1,13 @@
+cache = Dict{Int, Int}()
+
 function fib(n)
-  a, b = 0, 1
-  for _ in 1:n
-    a, b = b, a + b
+  if n in keys(cache)
+    cache[n]
+  else
+    res = n <= 1 ? 1 : fib(n - 1) + fib(n - 2)
+    cache[n] = res
+    res
   end
-  a
 end
 
 N = obs_num
