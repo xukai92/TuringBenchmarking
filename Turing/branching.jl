@@ -1,4 +1,4 @@
-
+cache = Dict{Int, Int}()
 
 function fib(n)
   if n in keys(cache)

@@ -17,7 +17,7 @@ println("----------------------------------")
 
 # Set observations numbers
 obs_num = CONFIG["obs_num"]
-cache = Dict{Int, Int}()
+
 # Open result file
 open(CONFIG["result_file"], "w") do f
 
