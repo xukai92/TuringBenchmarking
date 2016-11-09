@@ -1,7 +1,7 @@
 CONFIG = {
-  "batch_size" => 6,
+  "batch_size" => 100,
   "kilo_num" => 10000,
-  "mili_num" => 1000000,
+  "mili_num" => 10000,
   "model_list" => ["branching"],
 #  "model_list" => ["hmm", "marsaglia", "branching", "coin"],
   "sampler" => "smc",
