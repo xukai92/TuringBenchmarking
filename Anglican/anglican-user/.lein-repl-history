@@ -83,3 +83,6 @@ exit
 exit
 (+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 1000000"))
 exit
+(+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 10000"))
+exit
+(+ 1 1) (time (m! branching -a smc -n 1 -o ":number-of-particles 10000"))
