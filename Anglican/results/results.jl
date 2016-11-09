@@ -14,11 +14,13 @@ ang_marsaglia_1M = [4783, 4814, 4322, 4233, 4560, 4440]
 mean(ang_marsaglia_1M)
 
 # Still seem to be broken
-ang_branching_10k = [4.402, 13.856, 3.386, 5.805, 2.156, 7.878, 31.346, 6.992, 14.475, 1.897]
-mean(ang_branching_10k)
-ang_branching_1M = [40.672, 8.825, 40.457, 9.398, 2.781, 4.455, 11.950, 19.899, 16.908, 18.416]
-mean(ang_branching_1M)
+# ang_branching_10k = [4.402, 13.856, 3.386, 5.805, 2.156, 7.878, 31.346, 6.992, 14.475, 1.897]
+# mean(ang_branching_10k)
+# ang_branching_1M = [40.672, 8.825, 40.457, 9.398, 2.781, 4.455, 11.950, 19.899, 16.908, 18.416]
+# mean(ang_branching_1M)
 
+ang_branching_10k = [129385, 128122, 128771, 120901, 124197, 126886, 127098, 130000]
+rate = length(ang_branching_10k) / 240  # did 240 runs
 
 ang_coin_10k = [115541, 116857, 114385, 115899, 119551, 118906]
 mean(ang_coin_10k)
