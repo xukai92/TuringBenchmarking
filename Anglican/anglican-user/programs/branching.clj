@@ -4,7 +4,7 @@
 
 (defn fib [n]
   "returns the n-th number in the Fibonacci sequence"
-  (loop [a 0 b 1 m 0]
+  (loop [a 1 b 1 m 0]
     (if (= m n)
       a
       (recur b (+ a b) (inc m)))))
